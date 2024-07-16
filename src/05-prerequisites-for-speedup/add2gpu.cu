@@ -3,6 +3,7 @@
     adding time count function
 */
 
+
 #include "error.cuh"
 #include <math.h>
 #include <stdio.h>
