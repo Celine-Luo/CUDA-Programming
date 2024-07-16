@@ -1,3 +1,7 @@
+/*
+    time count memcpy part for add2gpu.cu
+*/
+
 #include "error.cuh"
 #include <math.h>
 #include <stdio.h>
