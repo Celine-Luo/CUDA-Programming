@@ -1,3 +1,9 @@
+/*
+    In addition to char3 add.cpp, which is a simple c++ code,
+    this file straghtly changed tail to .cu,
+    add conditional compile part,
+    add time set and repeated for 11 times, ignoring the first time operation
+*/
 #include "error.cuh"
 #include <math.h>
 #include <stdio.h>
