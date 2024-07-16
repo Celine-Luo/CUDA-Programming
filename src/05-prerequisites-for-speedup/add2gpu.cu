@@ -1,3 +1,7 @@
+/*
+    this file is an extension of char4 check1api.cu
+    adding time count function
+*/
 #include "error.cuh"
 #include <math.h>
 #include <stdio.h>
