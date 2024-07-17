@@ -16,10 +16,10 @@ int main(int argc, char **argv)
 {
     if (argc != 2) 
     {
-        printf("usage: %s N\n", argv[0]);
+        printf("usage: %s N\n", argv[0]);    // argv[0]是程序名，argv[1]是期望在命令行输入的第二个参数
         exit(1);
     }
-    const int N = atoi(argv[1]);
+    const int N = atoi(argv[1]);    // atoi(): 将字符串转换为整数的函数（来自 stdlib.h），此处将传入的第二个参数接受成为int N，即数组长度需要外部指定
     const int block_size = 128;
     const int grid_size = (N + block_size - 1) / block_size;
 
