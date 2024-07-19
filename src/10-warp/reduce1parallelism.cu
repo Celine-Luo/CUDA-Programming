@@ -42,7 +42,7 @@ void __global__ reduce_cp(const real *d_x, real *d_y, const int N)
     extern __shared__ real s_y[];
 
     real y = 0.0;
-    const int stride = blockDim.x * gridDim.x;
+    const int stride = blockDim.x * gridDim.x;    // 为了在归约前尽可能多的处理数据，让一份shrd_mem元素处理多个glo数据，一个线程访问数据具有stride跨度 以保持coalescing（不能同一个线程处理相邻连续数据）
     for (int n = bid * blockDim.x + tid; n < N; n += stride)
     {
         y += d_x[n];
